@@ -7,11 +7,12 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: #000000;
     height: 100vh;
 }
 
 .interface {
+    color: #fcf9f9;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -20,25 +21,32 @@ body {
     display: flex;
 }
 
-.btn-contato button {
+.btn-custom button {
+    margin: 0;
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #109de4;
+    background-color: #d68e08;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
 }
 
+h1.txt-topo-site{
+    color: #fdf9f9;
+    font-size: 38px;
+    text-align: center;
+}
+
 h2.titulo {
-    color: #000;
+    color: #fdf9f9;
     font-size: 38px;
     text-align: center;
 }
 
 h2.titulo span {
-    color: #0093D4;
+    color: #df164c;
 
 }
 
@@ -55,14 +63,14 @@ header>.interface {
 }
 
 header a {
-    color: #202020;
+    color: #f7f1f1;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 header nav.menu-desktop a:hover {
-    color: #3d40ec;
+    color: #df164c;
     transform: scale(1.05);
 }
 
@@ -79,13 +87,13 @@ header nav.menu-desktop ul li {
 
 
 .btn-contato button:hover {
-    box-shadow: 0px 0px 8px #109de436;
+    box-shadow: 0px 0px 8px #df164c;
     transform: scale(1.05);
 }
 
 /* estilo menu mobile*/
 .btn-abrir-menu i{
-    color: #25049e;
+    color: #5b0363;
     font-size: 40px;
 }
 @media screen and (min-width: 1020px) {
@@ -95,12 +103,12 @@ header nav.menu-desktop ul li {
     
 }
 .menu-mobile{
-    background-color:#109de4;
-    height: 100vh;
+    background-color:#0f0f0f;
+    height: 1000vh;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 99999;
+    z-index: 9999999;
     width: 0%;
     overflow: hidden;
     transition: .5s;
@@ -116,7 +124,7 @@ header nav.menu-desktop ul li {
     padding: 20px 5%;
 }
 .menu-mobile .btn-fechar i{
-    color: #04384e;
+    color: #fdfafa;
     font-size: 30px;
 
 
@@ -132,10 +140,10 @@ header nav.menu-desktop ul li {
     display: block;
 }
 .menu-mobile nav ul li a:hover{
-    background-color: #04384e;
+    background-color: #910f7f;
 }
 .overlay-menu{
-    background-color: #000000ab;
+    background-color: #faf6f6ab;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -162,12 +170,12 @@ section.topo-do-site.flex {
 }
 
 .topo-do-site h1 span {
-    color: #0093D4;
+    color: #df164c;
     font-size: 60px;
 }
 
 .topo-do-site .txt-topo-site p {
-    color: #000;
+    color: #fcf8f8;
     margin: 120px 4px;
 
 }
@@ -189,19 +197,19 @@ section.topo-do-site.flex {
 
 /*ESTILO DAS ESPECIALIDADES*/
 section.especialidades {
-    padding: 40px 4%;
+    padding: 10px 4%;
 
 }
 
 section.especialidades flex {
-    gap: 60px;
+    gap: 10px;
 }
 
 .especialidades .especialidades-box {
-    color: #000;
-    padding: 40px;
+    color: #fdf5f5;
+    padding: 9%;
     border-radius: 20px;
-    margin-top: 45px;
+    margin-top: 20px;
     transition: 1.02s;
 
 }
@@ -212,15 +220,21 @@ section.especialidades flex {
 }
 
 .especialidades .especialidades-box i {
-    font-size: 70px;
-    color: #0093D4;
+    font-size: 20px;
+    color: #08b65f;
 
 }
 
 .especialidades .especialidades-box h3 {
+   
     font-size: 28px;
     margin: 15px 0;
 }
+.especialidades button{
+    color: #df164c;
+    
+    
+ }
 
 /*estilo mais*/
 section.mais {
@@ -234,7 +248,7 @@ section.mais .flex {
 }
 
 .mais .txt-mais {
-    color: #000;
+    color: #faf5f5;
 }
 
 .mais .txt-mais h2 {
@@ -244,12 +258,15 @@ section.mais .flex {
 }
 
 .mais .txt-mais h2 span {
-    color: #0093D4;
+    color: #df164c;
 }
 
 .mais .txt-mais p {
     margin: 20px 0;
     text-align: justify;
+}
+.mais .txt-mais p span {
+    color: #df164c;
 }
 /*estilo mais1*/
 section.mais1 {
@@ -263,7 +280,7 @@ section.mais1 .flex {
 }
 
 .mais1 .txt-mais1 {
-    color: #000;
+    color: #faf6f6;
 }
 
 .mais1 .txt-mais1 h2 {
@@ -273,7 +290,7 @@ section.mais1 .flex {
 }
 
 .mais1 .txt-mais1 h2 span {
-    color: #0093D4;
+    color: #df164c;
 }
 
 .mais .txt-mais p {
@@ -283,7 +300,7 @@ section.mais1 .flex {
 /*ESTILO DO PORTIFOLIO*/
 section.portifolio {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #0094d496;
+    box-shadow: 0 0 40px 10px #d7e2d700;
 }
 
 section.portifolio .flex {
@@ -313,7 +330,7 @@ section.portifolio .flex {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0004ff4b;
+    background-color: #07883d4b;
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -386,80 +403,89 @@ footer {
 }
 
 @media screen and (max-width: 1020px) {
-
-
     /*CLASSES GERAIS*/
     .flex {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .topo-do-site .flex {
-        flex-direction: column-reverse;
+      flex-direction: column-reverse;
     }
-
+  
     h2.titulo {
-        font-size: 34px;
-        line-height: 30px;
+      font-size: 34px;
+      line-height: 30px;
     }
-   
-
+  
     /*CABEÇALHO*/
     .menu-desktop,
-    .btn-contato {
-        display: none;
+    .btn-custom.header {
+      display: none;
     }
-
+  
     /*topo do saite*/
     section.topo-do-site.flex {
-
-        gap: 100px;
-
+      gap: 100px;
     }
-
+  
     section.topo-do-site {
-        padding: 28px 8%;
-
+      padding: 28px 8%;
     }
-
+  
     .topo-do-site h1 {
-        padding: 25px;
-        font-size: 30px;
+      padding: 25px;
+      font-size: 30px;
     }
-
+  
     .topo-do-site .txt-topo-site p {
-        margin: 10px 4px;
-
+      margin: 10px 4px;
     }
-
+  
     .topo-do-site .img-topo-site img {
-        width: 100%;
+      width: 100%;
     }
-
+  
     /*ESTILO DAS ESPECIALIDADES*/
     section.especialidades {
-        padding: 40px 8%;
-
+      padding: 40px 8%;
     }
+  
+    /* Adiciona o botão personalizado */
+    .btn-custom.especialidades {
+      display: block;
+      margin: 0;
+      padding: 10px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: #d68e08;
+      border: 0;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: .2s;
+    }
+  
     /*sesao mais*/
     section.mais {
-
-        padding: 8px 4%;
+      padding: 8px 4%;
     }
     .mais .txt-mais h2 {
-        font-size: 34px;
-        line-height: 35px;
-        text-align: center;
+      font-size: 34px;
+      line-height: 35px;
+      text-align: center;
     }
+  
     /*portifolio*/
     section.portifolio {
-        padding: 80px 8%;
-        }
-        .img-port {
-            width: 100%;
-            max-width: 360px;
-            margin: 0 auto;
-            
-        }section.portifolio .flex {
-            gap: 60px;
-        }
-    }       
+      padding: 80px 8%;
+    }
+    .img-port {
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+    section.portifolio .flex {
+      gap: 60px;
+    }
+  }
+   
+  
